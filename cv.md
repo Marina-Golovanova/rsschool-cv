@@ -14,7 +14,7 @@
 ---
 
 - **Programming languages:** JavaScript, Python, R
-- **Markup language:** HTML, HTML5, CSS, Markdowm
+- **Markup language:** HTML, HTML5, CSS, Markdown
 - **Framework:** Flask
 - **Version Management:** Git, Github, GitKraken
 - **OS:** Ubuntu Linux
@@ -55,7 +55,7 @@ print(trafficLight.running())
 ---
 
 10/2020 - 11/2020
-: as part of the [Programming Basics course](https://geekbrains.ru/courses/754), I made a website that contains personal information, two games and a password generator (which I created earlier) through HTML, PHP and JavaScript (the site was hosted on a temporary platform, so there is no way to attach a link)
+:	as part of the [Programming Basics course](https://geekbrains.ru/courses/754), I made a website that contains personal information, two games and a password generator (which I created earlier) through HTML, PHP and JavaScript (the site was hosted on a temporary platform, so there is no way to attach a link)
 
 ## Education
 ---
