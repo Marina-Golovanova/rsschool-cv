@@ -1,2 +1,1 @@
-# rsschool-cv
-CV markdown
+https://Marina-Golovanova.github.io/rsschool-cv/cv
