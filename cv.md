@@ -1,8 +1,8 @@
 # Marina Golovanova
 
 *contacts:*
-: +7-968-515-30-43
-: gma18@list.ru
+- +7-968-515-30-43
+- gma18@list.ru
 
 ### Summary
 ---
@@ -68,8 +68,7 @@ print(trafficLight.running())
 - [Fundamentals of Python](https://geekbrains.ru/lessons/95218)
 
 **2020** 
-- HSE University
-*Faculty of social sciences, Sociology*
+- HSE University: *faculty of social sciences, sociology*
 
 
 **2018** 
