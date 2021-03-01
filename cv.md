@@ -54,26 +54,26 @@ print(trafficLight.running())
 ## Experience:
 ---
 
-10/2020 - 11/2020
-:	as part of the [Programming Basics course](https://geekbrains.ru/courses/754), I made a website that contains personal information, two games and a password generator (which I created earlier) through HTML, PHP and JavaScript (the site was hosted on a temporary platform, so there is no way to attach a link)
+**10/2020 - 11/2020**
+- as part of the [Programming Basics course](https://geekbrains.ru/courses/754), I made a website that contains personal information, two games and a password generator (which I created earlier) through HTML, PHP and JavaScript (the site was hosted on a temporary platform, so there is no way to attach a link)
 
 ## Education
 ---
 
- 2021 
-: - [Linux](https://geekbrains.ru/lessons/50390)
+**2021** 
+- [Linux](https://geekbrains.ru/lessons/50390)
 
-2020 
-: - [Programming Basics course](https://geekbrains.ru/courses/754)
-  - [Fundamentals of Python](https://geekbrains.ru/lessons/95218)
+**2020** 
+- [Programming Basics course](https://geekbrains.ru/courses/754)
+- [Fundamentals of Python](https://geekbrains.ru/lessons/95218)
 
-2020 
-: - HSE University
+**2020** 
+- HSE University
 *Faculty of social sciences, Sociology*
 
 
-2018 
-: - English First
+**2018** 
+- English First
 
 ## Language skills
 ---
