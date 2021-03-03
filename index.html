@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV-Marina-Golovanova</title>
+
+    <style>
+        html,
+        body {
+            min-height: 100%;
+            height: 1px;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .layout {
+            display: flex;
+            background-color: #fff;
+            min-height: 100%;
+            overflow: auto;
+            width: 1024px;
+            margin: 0 auto;
+        }
+
+        img {
+            object-fit: cover;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .center-img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        .sidebar {
+            background-color: #eadbea;
+            flex: 0 0 30%;
+            min-width: 200px;
+            max-width: 500px;
+        }
+
+        .content {
+            flex-grow: 1;
+        }
+
+        .box {
+            background-color: #5f4e5f;
+            color: #fff;
+            padding: 20px;
+            margin: 30px -35px;
+            text-align: center;
+        }
+
+        .section {
+            margin: 30px 35px;
+        }
+
+        .header {
+            background-color: #5f4e5f;
+            color: #fff;
+            padding: 15px;
+        }
+
+        .cell {
+            padding: 15px;
+        }
+
+        .code {
+            background-color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 13px;
+            padding: 5px;
+            margin: -30px 0 30px;
+        }
+
+        td:first-child {
+            width: 150px;
+        }
+
+        .close {
+            display: none;
+        }
+
+        .header-code {
+            background-color: #5f4e5f;
+            color: #fff;
+            padding: 15px;
+            margin: 30px 0px;
+        }
+
+        .header-code:hover {
+            background: #403540;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="sidebar">
+            <img src="https://sun9-43.userapi.com/impg/c857024/v857024710/18b05d/W3NlJq82j6g.jpg?size=1104x1472&quality=96&sign=d66d20db28c1262cf36241e148d272c3&type=album"
+                alt="photo" class="center-img">
+            <div class="section">
+                <div class="header">Contacts</div>
+                <div class="cell">
+                    <ul>
+                        <li>gma18@list.ru</li>
+                        <li>+7-968-515-30-43</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="header">Language skills</div>
+                <div class="cell">
+                    <ul>
+                        <li><b>English:</b> intermediate</li>
+                        <li><b>Russian:</b> native</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="section">
+                <div class="box">Marina Golovanova</div>
+                <div class="header">Summary</div>
+                <div class="cell">I am a beginner IT developer. I am a hardworking and ambitious individual with a great
+                    passion for the both front-end and back-end development. I have excellent interpersonal skills,
+                    enabling me to interact with a team. I want to grow and further improve my IT skills. I am seeing a
+                    position in the industry in which I can put into practice my knowledge and experience, ultimately
+                    benefiting the operations of the organisation that I work for.</div>
+            </div>
+            <div class="section">
+                <div class="header">Skills</div>
+                <div class="cell">
+                    <ul>
+                        <li><b>Programming languages:</b> JavaScript, Python, R</li>
+                        <li><b>Markup language:</b> HTML, HTML5, CSS, Markdown</li>
+                        <li><b>Framework:</b> Flask</li>
+                        <li><b>Version Management:</b> Git, Github, GitKraken</li>
+                        <li><b>OS:</b> Ubuntu Linux</li>
+                    </ul>
+                </div>
+                <div class="header-code header-code-color" onclick="toggleBlock()">Code
+                </div>
+                <pre class="code close">
+from time import sleep
+
+def count_down(time):
+    '''Обратный отсчет секунд'''
+    for sec in range(time, 0, -1):
+    print(sec, end='\r')
+    sleep(1)
+
+
+class TrafficLight():
+    __color = ['red', 'yellow', 'green']
+
+    def running(self):
+    while True:
+        i = 0
+        while(i < 3):
+        print(f'TrafficLight is {TrafficLight.__color[i]}')
+        if i == 0:
+            count_down(7)
+        elif i == 1:
+            count_down(5)
+        elif i == 2:
+            count_down(7)
+        i += 1
+
+trafficLight = TrafficLight()
+print(trafficLight.running())
+                </pre>
+                <div class="header">Experience</div>
+                <div class="cell">
+                    <table>
+                        <tr>
+                            <td><b>10/2020 - 11/2020</b></td>
+                            <td>as part of the Programming Basics course, I made a website that contains personal
+                                information,
+                                two
+                                games and a password generator (which I created earlier) through HTML, PHP and
+                                JavaScript
+                                (the
+                                site
+                                was hosted on a temporary platform, so there is no way to attach a link)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="header">Education</div>
+                <div class="cell"><b>2021</b>
+                    <ul>
+                        <li><a href="https://geekbrains.ru/lessons/107716">Linux</a></li>
+                    </ul>
+                </div>
+                <div class="cell"><b>2020</b>
+                    <ul>
+                        <li><a href="https://geekbrains.ru/lessons/95218">Fundamentals of Python</a></li>
+                        <li><a href="https://geekbrains.ru/chapters/5087">Programming Basics course</a></li>
+                        <li>HSE University: <i>faculty of social sciences, sociology</i></li>
+                    </ul>
+                </div>
+                <div class="cell"><b>2018</b>
+                    <ul>
+                        <li><a href="https://www.ef.ru/">English First</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleBlock() {
+            const el = document.querySelector('.code');
+            if (el.classList.contains('close')) {
+                el.classList.remove('close');
+            } else {
+                el.classList.add('close');
+            }
+        }
+    </script>
+</body>
+
+</html>
