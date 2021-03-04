@@ -28,7 +28,7 @@
             margin: 0 auto;
         }
 
-        img {
+        .avatar {
             object-fit: cover;
             width: 200px;
             height: 200px;
@@ -64,14 +64,20 @@
             text-align: center;
         }
 
-        .section {
+        h2 {
+            font-size: 15px;
+        }
+
+        section {
             margin: 30px 35px;
         }
 
-        .header {
+        .heading {
             background-color: #5f4e5f;
             color: #fff;
             padding: 15px;
+            font-weight: 300;
+            font-size: 18px;
         }
 
         .cell {
@@ -83,27 +89,26 @@
             font-family: 'Courier New', Courier, monospace;
             font-size: 13px;
             padding: 5px;
-            margin: -30px 0 30px;
         }
 
         td:first-child {
             width: 150px;
         }
 
-        .close {
-            display: none;
+        details {
+            margin: 15px 0 30px;
         }
 
-        .header-code {
-            background-color: #5f4e5f;
-            color: #fff;
-            padding: 15px;
-            margin: 30px 0px;
+        .img-link {
+            object-fit: cover;
+            height: 50px;
+            margin: 0 5px;
         }
 
-        .header-code:hover {
-            background: #403540;
-            cursor: pointer;
+        footer {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
         }
     </style>
 </head>
@@ -112,38 +117,41 @@
     <div class="layout">
         <div class="sidebar">
             <img src="https://sun9-43.userapi.com/impg/c857024/v857024710/18b05d/W3NlJq82j6g.jpg?size=1104x1472&quality=96&sign=d66d20db28c1262cf36241e148d272c3&type=album"
-                alt="photo" class="center-img">
-            <div class="section">
-                <div class="header">Contacts</div>
+                alt="photo" class="avatar center-img">
+            <section>
+                <h3 class="heading">Contacts</h3>
                 <div class="cell">
                     <ul>
                         <li>gma18@list.ru</li>
                         <li>+7-968-515-30-43</li>
                     </ul>
                 </div>
-            </div>
-            <div class="section">
-                <div class="header">Language skills</div>
+            </section>
+            <section>
+                <h3 class="heading">Language skills</h3>
                 <div class="cell">
                     <ul>
                         <li><b>English:</b> intermediate</li>
                         <li><b>Russian:</b> native</li>
                     </ul>
                 </div>
-            </div>
+            </section>
         </div>
         <div class="content">
-            <div class="section">
-                <div class="box">Marina Golovanova</div>
-                <div class="header">Summary</div>
+            <section>
+                <div class="box">
+                    <h1>Marina Golovanova</h1>
+                    <h2>Junior FE-developer</h2>
+                </div>
+                <h3 class="heading">Summary</h3>
                 <div class="cell">I am a beginner IT developer. I am a hardworking and ambitious individual with a great
                     passion for the both front-end and back-end development. I have excellent interpersonal skills,
                     enabling me to interact with a team. I want to grow and further improve my IT skills. I am seeing a
                     position in the industry in which I can put into practice my knowledge and experience, ultimately
                     benefiting the operations of the organisation that I work for.</div>
-            </div>
-            <div class="section">
-                <div class="header">Skills</div>
+            </section>
+            <section>
+                <h3 class="heading">Skills</h3>
                 <div class="cell">
                     <ul>
                         <li><b>Programming languages:</b> JavaScript, Python, R</li>
@@ -153,9 +161,10 @@
                         <li><b>OS:</b> Ubuntu Linux</li>
                     </ul>
                 </div>
-                <div class="header-code header-code-color" onclick="toggleBlock()">Code
-                </div>
-                <pre class="code close">
+                <h3 class="heading">Code</h3>
+                <details>
+                    <summary>Example</summary>
+                    <pre class="code">
 from time import sleep
 
 def count_down(time):
@@ -171,7 +180,7 @@ class TrafficLight():
     def running(self):
     while True:
         i = 0
-        while(i < 3):
+        while(i &#60; 3):
         print(f'TrafficLight is {TrafficLight.__color[i]}')
         if i == 0:
             count_down(7)
@@ -183,8 +192,9 @@ class TrafficLight():
 
 trafficLight = TrafficLight()
 print(trafficLight.running())
-                </pre>
-                <div class="header">Experience</div>
+                    </pre>
+                </details>
+                <h3 class="heading">Experience</h3>
                 <div class="cell">
                     <table>
                         <tr>
@@ -200,7 +210,7 @@ print(trafficLight.running())
                         </tr>
                     </table>
                 </div>
-                <div class="header">Education</div>
+                <h3 class="heading">Education</h3>
                 <div class="cell"><b>2021</b>
                     <ul>
                         <li><a href="https://geekbrains.ru/lessons/107716">Linux</a></li>
@@ -219,19 +229,15 @@ print(trafficLight.running())
                     </ul>
                 </div>
 
-            </div>
+            </section>
+            <footer><a href="https://github.com/Marina-Golovanova"><img class="img-link"
+                        src="./Github_icon-icons.com_49946.png" alt="github"></a>
+                <a href="https://rs.school/js/"><img class="img-link" src="https://rs.school/images/rs_school_js.svg"
+                        alt="rsschool"></a>
+                <b>© 2021</b>
+            </footer>
         </div>
     </div>
-    <script>
-        function toggleBlock() {
-            const el = document.querySelector('.code');
-            if (el.classList.contains('close')) {
-                el.classList.remove('close');
-            } else {
-                el.classList.add('close');
-            }
-        }
-    </script>
 </body>
 
 </html>
